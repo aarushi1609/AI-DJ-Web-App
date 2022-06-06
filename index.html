@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AI DJ WEB APP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <center>
+    <h3 class="btn btn-warning heading">AI DJ WEB APP
+      <br>
+      <span class="note">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume.
+        Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+    </h3>
+    <br><br>
+    <div id="volume-div">
+      <img src="disk.gif">
+      <br>
+      <button id="volume" class="btn btn-danger">Volume</button>
+    </div>
+    <div id="speed-div">
+      <img src="disk.gif">
+      <br>
+      <button id="speed" class="btn btn-danger">Speed</button>
+    </div>
+
+    <select id="choose">
+      <option value="hp_theme">Harry Potter Theme</option>
+      <option value="frozen">Frozen - Let It Go</option>
+      <option value="peter_pan">Peter Pan Theme</option>
+    </select>
+    <br>
+    <button id="play_button" onclick="play();" class="btn btn-success">Play</button>
+    <button id="stop_button" onclick="stop();" class="btn btn-danger">Stop</button>
+
+  </center>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

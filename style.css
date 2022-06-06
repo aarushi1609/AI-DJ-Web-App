@@ -1,0 +1,61 @@
+.heading
+{
+    width: 100%;
+    font-size: 30px !important;
+    margin: 0px;
+}
+
+.note
+{
+    font-size: 15px;
+}
+
+body
+{
+    background-image: URL("background.jpg");
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img
+{
+    width: 200px;
+    height: 200px;
+}
+
+#speed-div
+{
+    float: right;
+    margin: 10px;
+    font-size: 30px !important;
+}
+
+#volume-div
+{
+    float: left;
+    margin: 10px;
+}
+
+button
+{
+    margin-top: 10px;
+    font-size: 20px !important;
+}
+
+canvas
+{
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-top: 80px;
+}
+
+select
+{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#stop_button
+{
+    margin-left: 20px;
+}
